@@ -8,6 +8,21 @@
             "name": ".NET Core Attach",
             "type": "coreclr",
             "request": "attach"
+        },
+        {
+            "name": ".Net Core Launch (Console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "args": [],
+            "program": "${workspaceFolder}/api/bin/Debug/net7.0/API.dll"
+        },
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}/client"
         }
     ]
 }
