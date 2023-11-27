@@ -34,7 +34,7 @@ if (app.Environment.IsDevelopment())
 app.UseCors(opt =>
 {
     // allow credentials for cookie base auth
-    opt.AllowAnyHeader().AllowAnyMethod().AllowCredentials().WithOrigins("http://localhost:3000");
+    opt.AllowAnyHeader().AllowAnyMethod().AllowCredentials().WithOrigins("http://localhost:3000","http://127.0.0.1:3000");
 });
 
 app.UseAuthorization();
